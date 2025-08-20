@@ -23,13 +23,9 @@ class Calculator {
         return a * b;
     }
 
-    public int divide(int a, int b) throws ArithmeticException {
-        if (b == 0) throw new ArithmeticException("Division by zero!");
-        return a / b;
-    }
-
     public double divide(double a, double b) throws ArithmeticException {
-        if (b == 0.0) throw new ArithmeticException("Division by zero!");
+        if (b == 0.0)
+            throw new ArithmeticException("Division by zero!");
         return a / b;
     }
 }
@@ -40,7 +36,6 @@ public class calculatorOverloading {
 
         System.out.println("Int Add: " + calc.add(10, 5));
         System.out.println("Double Add: " + calc.add(10.5, 5.2));
-        System.out.println("Int Divide: " + calc.divide(10, 2));
         System.out.println("Double Divide: " + calc.divide(10.0, 3.0));
 
     }
